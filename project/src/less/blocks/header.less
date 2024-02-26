@@ -1,0 +1,49 @@
+// main: ../main.less
+
+.header {
+    display: block; 
+    height: 90px;
+    padding: @padding_header;
+}
+
+.container {
+    max-width: @width_main_container;
+    margin: 0 auto;
+    width: calc(100% - 10px);
+}
+
+.header__container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  
+}
+
+.header__link {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    color: @black;
+    margin: 0 57px 0 0;
+    &:hover {
+        color: @main_dark;
+    }
+}
+
+
+.header__btn {
+    display: block;
+    width: 111px;
+    height: 51px;
+    color: @white;
+    background-color: @main_light;
+    border: none;
+    border-radius: 99px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    &:hover {
+        background-color: @main_dark;
+    }
+}
