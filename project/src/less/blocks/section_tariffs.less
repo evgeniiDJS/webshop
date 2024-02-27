@@ -1,0 +1,139 @@
+// main: ../main.less
+
+.tariffs {
+    background-color: #222228;
+}
+
+.tariffs_titles {
+    display: block;
+    text-align: center;
+    color: @white;
+}
+
+.tariffs__check {
+    align-items: center;
+    padding: 48px 0;
+}
+
+.tariffs__demoToggleCheckbox {
+    display: none;
+}
+
+.tariffs__demoToggleCheckbox + label {
+    display: inline-block;
+    width: 43px;
+    height: 30px;
+    background-color: #ABABAB;
+    border-radius: 17px;
+    position: relative;
+    cursor: pointer;
+}
+
+.tariffs__demoToggleCheckbox + label:after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: -3px;
+    width: 22px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: @white;
+    transition: transform 0.3s;
+}
+
+.tariffs__demoToggleCheckbox:checked + label {
+    background-color: #25DAC5;
+}
+
+.tariffs__demoToggleCheckbox:checked + label:after {
+    transform: translateX(26px);
+}
+
+.tariffs__price {
+    display: flex;
+    justify-content: center;
+}
+
+.tariffs__price_item {
+    display: block;
+    width: 370px;
+    height: 576px;
+}
+
+.tariffs__price_item-margin {
+    margin: 0 30px 0 0;
+}
+
+.tariffs__price_item_picture1 {
+    display: block;
+    background-image: url(@tariffs__price_item_picture1);
+    width: 368px;
+    height: 210px;
+    background-repeat: no-repeat;
+}
+.tariffs__price_item_picture2 {
+    display: block;
+    background-image: url(@tariffs__price_item_picture2);
+    width: 368px;
+    height: 210px;
+    background-repeat: no-repeat;
+}
+
+.tariffs__price_item-borders {
+    display: block; 
+    width: 368px; 
+    height: 366px; 
+    border: solid 1px @white; 
+    padding: 41px 30px;
+    align-items: center;
+}
+
+.tariffs__price_item_flex {
+    display: flex;
+    align-items: center;
+    padding: 46px 0 0 0;
+    justify-content: space-between;
+}
+
+.tariffs__price_item-colors-text {
+    color: @white;
+}
+
+.tariffs__price_item_title {
+    font-size: 22px;
+    font-weight: 500;
+    color: @white;
+}
+
+.tariffs__price_item_description {
+    display: block;
+    width: 283px;
+    height: 143px;
+    font-size: 16px;
+    font-weight: 200;
+    color: @white;
+    padding: 43px 0 0 0;
+}
+.tariffs__price_item_description-pd {
+    padding: 36px 0 0 0;
+}
+
+.tariffs__price_item_btn {
+    display: block;
+    width: 270px;
+    height: 50px;
+    border: none;
+    background-color: @main_light;
+    border-radius: 100px;
+    margin: 30px 0 0 0;
+    cursor: pointer;
+    &:hover {
+        background-color: @main_dark; 
+    }
+}
+
+.tariffs__price_item_btn-none {
+    background-color: transparent;
+    color: @white;
+    border: solid 2px @white;
+}

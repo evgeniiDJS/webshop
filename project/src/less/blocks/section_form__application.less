@@ -1,0 +1,231 @@
+// maun: ../main.less
+
+/* MODAL WINDOW # 1 */
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(22, 13, 13, 0.8);
+    z-index: 99999;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+  
+.modalDialog:target {
+    display: block;
+    pointer-events: auto;
+}
+  
+.modalDialog > div {
+    height: 590px;
+    width: 697px;
+    position: relative;
+    margin: 1% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: @white;
+    background: @black;
+}
+  
+.close {
+    background: #D1D1D1;
+    color: @white;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px @black;
+}
+  
+.close:hover {
+    background: @main_dark;
+}
+  
+.modaldialog-content {
+    display: block;
+}
+
+
+.form__application-post {
+    padding: 56px 50px 0 50px;
+}
+
+.modaldialog-content {
+    text-align: left;
+    color: @white;
+}
+
+.modaldialog-content__title {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.modaldialog-content__feedback {
+    font-size: 16px;
+    font-weight: 200;
+    padding: 27px 0 50px 0;
+}
+
+
+.text-field {
+    margin-bottom: 1rem;
+}
+
+  .text-field__label {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.text-field__input {
+    outline: none;
+    display: block;
+    width: 474px;
+    height: 38px;
+    padding: 0;
+    color: @white;
+    opacity: 0.8;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #dddada;
+    border-radius: 0.25rem;
+    font-size: 22px;
+    font-weight: 200;
+}
+  
+.form__application-post_btn {
+    display: block;
+    text-decoration: none;
+    width: 474px;
+    height: 70px;
+    background-color: @main_light;
+    color: @white;
+    border-radius: 60px;
+    text-align: center;
+    padding: 25px;
+    margin: 35px 0;
+    font-size: 18px;
+    font-weight: 200;
+    &:hover {
+        background-color: @main_dark;
+    }
+}
+
+.form__application-post_approval {
+    display: flex;
+    text-align: right;
+}
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #D1D1D1;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-color: #D1D1D1;
+  }
+  
+  .custom-checkbox:checked+label::before {
+    border-color: @main_light;
+    background-color: @main_light;
+  }
+
+.form__application-post_approval_text {
+    font-size: 16px;
+    font-weight: 200;
+    color: @white;
+    opacity: 0.5;
+}
+
+
+/* MODAL WINDOW # 2 */
+
+.modalDialog2 {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(22, 13, 13, 0.8);
+    z-index: 99999;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+  
+.modalDialog2:target {
+    display: block;
+    pointer-events: auto;
+}
+  
+.modalDialog2 > div {
+    height: 204px;
+    width: 570px;
+    position: relative;
+    margin: 20% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: @white;
+    background: @black;
+}
+  
+.close2 {
+    background: #D1D1D1;
+    color: @white;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px @black;
+}
+  
+.close2:hover {
+    background: @main_dark;
+}
+  
+.modaldialog-content2 {
+    color: @white;
+    display: block;
+    text-align: center;
+}
+
+.modaldialog-content2__title {
+    padding: 57px 0 25px 0;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.modaldialog-content2__text {
+    font-size: 16px;
+    font-weight: 200;
+    opacity: 0.5;
+}
